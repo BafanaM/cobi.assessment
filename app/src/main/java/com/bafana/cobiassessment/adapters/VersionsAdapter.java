@@ -42,30 +42,30 @@ public class VersionsAdapter extends RecyclerView.Adapter<VersionsAdapter.Versio
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(context, SingleItemViewActivity.class);
-                intent.putExtra("name", version.getName());
-                intent.putExtra("version", version.getVersion());
-                intent.putExtra("released",version.getReleased());
-                intent.putExtra("api", version.getApi());
-                context.startActivity(intent);
-            }
-        });
+//                 Intent intent = new Intent(context, SingleItemViewActivity.class);
+//                 intent.putExtra("name", version.getName());
+//                 intent.putExtra("version", version.getVersion());
+//                 intent.putExtra("released",version.getReleased());
+//                 intent.putExtra("api", version.getApi());
+//                 context.startActivity(intent);
+//             }
+//         });
         return new VersionsHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(VersionsHolder holder, int position) {
-//        if(versions != null && !versions.isEmpty()) {
-//            Version version = versions.get(position);
-//            holder.tvName.setText(version.getName());
-//            holder.tvVersion.setText(version.getVersion());
-//            holder.tvRelease.setText(version.getReleased());
-//            holder.tvApi.setText(version.getApi());
-//            //holder.ivAndroidIcon.getDrawable();
-//
-//            //imageLoader.DisplayImage(version.getImage(), holder.ivAndroidIcon);
-//
-//        }
+       if(versions != null && !versions.isEmpty()) {
+           Version version = versions.get(position);
+           holder.tvName.setText(version.getName());
+           holder.tvVersion.setText(version.getVersion());
+           holder.tvRelease.setText(version.getReleased());
+           holder.tvApi.setText(version.getApi());
+           //holder.ivAndroidIcon.getDrawable();
+
+           //imageLoader.DisplayImage(version.getImage(), holder.ivAndroidIcon);
+
+       }
     }
 
     @Override
