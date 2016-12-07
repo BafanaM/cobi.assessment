@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cobi Assessment</string>
+    <string name="menu_settings">Settings</string>
+    <string name="name_label">"Name : "</string>
+    <string name="versionLabel">"Version : "</string>
+    <string name="releaseLabel">"Release : "</string>
+    <string name="apiLabel">"Api : "</string>
+
+</resources>
